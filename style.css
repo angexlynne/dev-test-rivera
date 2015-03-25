@@ -1,0 +1,182 @@
+/* ==========================================================================
+   Main section
+   ========================================================================== */
+
+
+header, section, footer, aside, nav, main, article, figure {
+    display: block; 
+}
+
+body {
+	font-family: "arial", "helvetica", "sans-serif";
+	background: url(images/bg_body.jpg) no-repeat center center fixed;
+	background-size: cover;
+}
+
+main {
+	max-width: 950px;
+	margin: auto;
+}
+
+section {
+	background-color: white;
+	border-radius: 6px;
+	box-shadow: 1px 1px 2px #ccc; 
+}
+
+
+/* News section
+   ========================================================================== */
+
+#news {
+	float: left;
+	width: 640px;
+}
+
+#news article {
+	width: 50%;
+	padding: 0 0 20px 0;
+}
+
+#news .content {
+	height: 180px;
+}
+
+#news h4 {
+	margin: 0;
+	padding: 20px;
+	text-transform: uppercase;
+	font-weight: bold;
+	color: #fff;
+	text-shadow: 1px 1px #555;
+	background: -webkit-linear-gradient(#fb2e6d, #e61052); /* For Safari 5.1 to 6.0 */
+  	background: -o-linear-gradient(#fb2e6d, #e61052); /* For Opera 11.1 to 12.0 */
+  	background: -moz-linear-gradient(#fb2e6d, #e61052); /* For Firefox 3.6 to 15 */
+  	background: linear-gradient(#fb2e6d, #e61052); /* Standard syntax */
+	border: none;
+}
+
+#left {
+	border-top-left-radius: 6px;
+}
+
+#right {
+	border-top-right-radius: 6px;
+}
+
+header {
+	padding: 0 20px;
+	margin: 20px 0;
+	font-weight: bold;
+	white-space: nowrap;
+}
+
+#news img {
+	padding-left: 20px;
+}
+
+#news p {
+	padding: 0 20px 0 0;
+	width: 50%;
+	float: right;
+	line-height: 1.5;
+}
+
+#news a {
+	text-decoration: none;
+	color: #e61052;
+	line-height: 3;
+}
+
+/* Sidebar
+   ========================================================================== */
+
+aside {
+	float: right;
+	width: 300px;
+}
+
+aside section {
+	margin-bottom: 20px;
+}
+
+h4 {
+	margin: 0;
+	padding: 20px;
+	text-transform: uppercase;
+	font-weight: bold;
+	color: #e61052;
+	border-bottom: 2px dotted #eee;
+}
+
+article {
+	padding: 20px;
+}
+
+p {
+ 	margin: 0;
+ 	padding: 0 7px 0 4px;
+ 	display: inline;
+ 	font-size: 10pt;
+ 	color: #978664;
+ }
+
+#random p {
+	line-height: 2;
+}
+
+#find p {
+	padding: 0;
+}
+
+strong {
+	font-size: 10pt;
+	color: #978664;
+	line-height: 2;
+}
+
+/* ==========================================================================
+   Media queries
+   ========================================================================== */
+
+@media screen and (max-width: 975px) and (min-width: 650px) {
+	main {
+		max-width: 640px;
+	}
+
+	aside {
+		float: left;
+		width: 640px;
+		margin-top: 20px;
+	}
+}
+
+@media screen and (max-width: 650px) {
+	main {
+		max-width: 320px;
+	}
+
+	aside {
+		float: left;
+		width: 320px;
+		margin-top: 20px;
+	}
+
+	#news article {
+		float: none !important;
+		width: 320px;
+	}
+
+	#news {
+		width: 320px;
+	}
+
+	#left {
+	border-top-left-radius: 6px;
+	border-top-right-radius: 6px;
+}
+
+	#right {
+		border-top-right-radius: 0;
+	}
+}
